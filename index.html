@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact us using our simple and user-friendly form for general inquiries or support requests. We'll respond promptly to your query."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaq.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="heading">Contact Us</h1>
+
+      <form action="" method="get" class="contact-form">
+        <div class="tablet">
+          <div class="error column">
+            <label for="firstname"
+              >First Name <span class="star"> *</span></label
+            >
+            <input class="inputs" type="text" name="firstname" id="firstname" />
+            <div class="error-msg err-mobile" id="firstname-err">
+              This field is required
+            </div>
+          </div>
+
+          <div class="error column">
+            <label for="lastname">Last Name <span class="star"> *</span></label>
+            <input class="inputs" type="text" name="lastname" id="lastname" />
+            <div class="error-msg err-mobile" id="lastname-err">
+              This field is required
+            </div>
+          </div>
+        </div>
+
+        <div class="column error">
+          <label for="email">Email Address <span class="star"> *</span></label>
+          <input class="inputs" type="text" name="email" id="email" />
+          <div class="error-msg" id="email-err">
+            Please enter a valid email address
+          </div>
+        </div>
+
+        <div class="query-type">
+          <legend>Query Type <span class="star"> *</span></legend>
+
+          <div class="row column error">
+            <fieldset>
+              <label class="input-label">
+                <input class="radio-input" type="radio" name="radio" />
+                General Enquiry
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <label class="input-label">
+                <input class="radio-input" type="radio" name="radio" />
+                Support Request
+              </label>
+            </fieldset>
+          </div>
+          <div class="query-err error-msg">Please select a query type</div>
+
+          <div class="msg-area column">
+            <label for="message">Message<span class="star">*</span></label>
+            <textarea
+              class="inputs"
+              name="message"
+              id="message"
+              maxlength="140"
+            ></textarea>
+            <div class="error-msg" id="msg-err">This field is required</div>
+          </div>
+        </div>
+
+        <div class="check-container">
+          <input class="checkbox" id="check-msg" type="checkbox" tabindex="0" />
+          <label class="custom-checkbox" for="check-msg"
+            >I consent to being contacted by the team<span class="star"
+              >*</span
+            ></label
+          >
+          <div class="check-icon"></div>
+        </div>
+        <div class="error-msg check-err" id="msg-err">
+          To submit this form, please consent to being contacted Submit Message
+          Sent!
+        </div>
+
+        <button class="submit" type="submit">Submit</button>
+
+        <div class="success-container">
+          <div class="wrapper">
+            <div class="success-msg">
+              <img
+                src="/assets/images/icon-success-check.svg"
+                alt=""
+                class="success-icon"
+              />
+              <p class="success-header">Message Sent!</p>
+            </div>
+            <p class="success-text">
+              Thanks for completing the form. We'll be in touch soon!
+            </p>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Tuna Erten</a>.
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

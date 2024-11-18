@@ -1,0 +1,54 @@
+@media (min-width: 48rem) {
+  body {
+    padding: 8rem 3rem;
+  }
+
+  .container {
+    padding: 2.5rem;
+    width: 690px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .query-type .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tablet {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .msg-area textarea {
+    height: 7.35em;
+  }
+
+  .success-container {
+    width: min(100%, 28.2em);
+    transform: translateX(-50%);
+    top: -6.55em;
+  }
+
+  .success-container .wrapper {
+    padding-top: 1.6em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (min-width: 64rem) {
+  .container {
+    width: 736px;
+    margin: 0 auto;
+  }
+
+  .msg-area textarea {
+    height: 5.85em;
+  }
+}
