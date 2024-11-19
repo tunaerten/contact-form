@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/tunaerten/card-component]
-- Live Site URL: [https://card-component-erten.netlify.app]
+- Solution URL: [https://github.com/tunaerten/contact-form]
+- Live Site URL: [https://contact-form-erten.netlify.app/]
 
 ## My process
 
@@ -40,4 +40,4 @@ Users should be able to:
 
 ### What I learned
 
-This project was quite enjoyable. I navigate CSS efficiently and can implement it quickly. The coding process took slightly longer as I needed to refresh my knowledge of forms; however, I didn't encounter significant challenges. I am looking forward to taking on more complex projects.
+I struggled quite a bit with styling radio buttons and checkboxes, but after some research, I think I’ve figured it out. Other than that, I didn’t face many challenges. I realize now that I should plan and write the error messages in the initial HTML structure next time. Since I didn’t do that, I had to rewrite the code from scratch. Nevertheless, it was an enjoyable project. I’d appreciate any advice you can offer!
