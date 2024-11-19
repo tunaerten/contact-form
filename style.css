@@ -107,11 +107,11 @@ a:active {
 }
 
 footer {
-  display: none;
+  text-align: center;
 }
 
 .attribution a {
-  /* color: white; */
+  color: var(--clr-grey-900);
 }
 
 body {
@@ -131,6 +131,7 @@ body {
   background-color: var(--clr-white);
   border-radius: 1rem;
   font-weight: 300;
+  width: max(100%, 343px);
 }
 
 .heading {
@@ -254,7 +255,7 @@ textarea:focus {
   position: relative;
   margin-left: 1.45em;
 }
-/* Label içindeki radio buton simgesi */
+
 .input-label::before {
   content: "";
   display: inline-block;
@@ -399,7 +400,7 @@ fieldset:has(input[type="radio"]:checked) {
   left: 50%;
   background-color: var(--clr-grey-900);
   color: var(--clr-white);
-  width: min(100%, 87%);
+  width: min(100%, 20rem);
   transform: translateX(-50%);
   border-radius: 0.8em;
   display: flex;
