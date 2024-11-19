@@ -10,14 +10,6 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
 
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-
 ### Screenshot
 
 ![](./screenshot.png)
