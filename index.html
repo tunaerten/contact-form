@@ -7,6 +7,8 @@
       name="description"
       content="Contact us using our simple and user-friendly form for general inquiries or support requests. We'll respond promptly to your query."
     />
+    <meta name="author" content="Tuna Erten" />
+
     <link
       rel="icon"
       type="image/png"
@@ -22,13 +24,21 @@
     <main class="container">
       <h1 class="heading">Contact Us</h1>
 
-      <form action="" method="get" class="contact-form">
+      <form method="post" class="contact-form">
         <div class="tablet">
           <div class="error column">
             <label for="firstname"
               >First Name <span class="star"> *</span></label
             >
-            <input class="inputs" type="text" name="firstname" id="firstname" />
+            <input
+              autofocus
+              class="inputs"
+              type="text"
+              name="firstname"
+              id="firstname"
+              aria-invalid="true"
+              aria-describedby="firstname-err"
+            />
             <div class="error-msg err-mobile" id="firstname-err">
               This field is required
             </div>
@@ -36,7 +46,14 @@
 
           <div class="error column">
             <label for="lastname">Last Name <span class="star"> *</span></label>
-            <input class="inputs" type="text" name="lastname" id="lastname" />
+            <input
+              aria-invalid="true"
+              aria-describedby="lastname-err"
+              class="inputs"
+              type="text"
+              name="lastname"
+              id="lastname"
+            />
             <div class="error-msg err-mobile" id="lastname-err">
               This field is required
             </div>
@@ -45,54 +62,88 @@
 
         <div class="column error">
           <label for="email">Email Address <span class="star"> *</span></label>
-          <input class="inputs" type="text" name="email" id="email" />
+          <input
+            aria-invalid="true"
+            aria-describedby="email-err"
+            class="inputs"
+            type="text"
+            name="email"
+            id="email"
+          />
           <div class="error-msg" id="email-err">
             Please enter a valid email address
           </div>
         </div>
 
-        <div class="query-type">
+        <fieldset class="query-type">
           <legend>Query Type <span class="star"> *</span></legend>
 
-          <div class="row column error">
-            <fieldset>
-              <label class="input-label">
-                <input class="radio-input" type="radio" name="radio" />
-                General Enquiry
-              </label>
-            </fieldset>
+          <div class="query-container">
+            <div class="row column error">
+              <div class="query">
+                <input
+                  aria-invalid="true"
+                  aria-describedby="query-err"
+                  class="radio-input"
+                  id="general-enquiry"
+                  type="radio"
+                  name="radio"
+                />
+                <label for="general-enquiry" class="input-label">
+                  General Enquiry
+                </label>
+              </div>
 
-            <fieldset>
-              <label class="input-label">
-                <input class="radio-input" type="radio" name="radio" />
-                Support Request
-              </label>
-            </fieldset>
+              <div class="query">
+                <input
+                  aria-invalid="true"
+                  aria-describedby="query-err"
+                  class="radio-input"
+                  type="radio"
+                  name="radio"
+                  id="support-request"
+                />
+                <label for="support-request" class="input-label">
+                  Support Request
+                </label>
+              </div>
+            </div>
+
+            <div id="query-err" class="query-err error-msg">
+              Please select a query type
+            </div>
+
+            <div class="msg-area column">
+              <label for="message">Message<span class="star">*</span></label>
+              <textarea
+                class="inputs"
+                name="message"
+                id="message"
+                maxlength="140"
+                aria-invalid="true"
+                aria-describedby="msg-err"
+              ></textarea>
+              <div class="error-msg" id="msg-err">This field is required</div>
+            </div>
           </div>
-          <div class="query-err error-msg">Please select a query type</div>
+        </fieldset>
 
-          <div class="msg-area column">
-            <label for="message">Message<span class="star">*</span></label>
-            <textarea
-              class="inputs"
-              name="message"
-              id="message"
-              maxlength="140"
-            ></textarea>
-            <div class="error-msg" id="msg-err">This field is required</div>
-          </div>
-        </div>
-
-        <div class="check-container">
-          <input class="checkbox" id="check-msg" type="checkbox" tabindex="0" />
-          <label class="custom-checkbox" for="check-msg"
+        <div class="checkbox-container">
+          <input
+            aria-invalid="true"
+            aria-describedby="check-err"
+            class="checkbox"
+            id="check-msg"
+            type="checkbox"
+            tabindex="0"
+          />
+          <label class="check-label" for="check-msg"
             >I consent to being contacted by the team<span class="star"
               >*</span
             ></label
           >
-          <div class="check-icon"></div>
         </div>
-        <div class="error-msg check-err" id="msg-err">
+        <div class="error-msg check-err" id="check-err">
           To submit this form, please consent to being contacted Submit Message
           Sent!
         </div>
@@ -123,7 +174,7 @@
         <a href="https://www.frontendmentor.io?ref=challenge"
           >Frontend Mentor. <br
         /></a>
-        Coded by <a href="https://github.com/tunaerten">Tuna Erten</a>.
+        Coded by <a href="#">Tuna Erten</a>.
       </div>
     </footer>
 
